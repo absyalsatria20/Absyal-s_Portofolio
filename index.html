@@ -227,20 +227,27 @@
     </section>
 
     <section id="tentang" class="py-24 bg-dark relative border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <!-- Image / Visual Representation -->
-                <div class="w-full lg:w-1/2">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur-2xl opacity-30"></div>
-                        <img src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/7.7%20BANNER%20SUPOTSU.jpg" alt="Setup Desain" class="relative z-10 rounded-3xl object-cover aspect-square grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-white/10">
-                        <!-- Floating Badge -->
-                        <div class="absolute -bottom-6 -right-6 z-20 bg-darker p-6 rounded-2xl border border-white/10 shadow-xl flex items-center gap-4">
-                            <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500">5+</div>
-                            <div class="text-sm text-gray-400 leading-tight">Tahun<br>Pengalaman</div>
-                        </div>
-                    </div>
-                </div>
+        <!-- STYLE 2: FLOATING PILL CAPSULE -->
+<div class="w-full lg:w-1/2">
+    <div class="relative flex justify-center">
+        <!-- Gradasi Cahaya Belakang -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur-2xl opacity-30 z-0 pointer-events-none transform-gpu"></div>
+        
+        <!-- Foto Utama -->
+        <img src="https://images.unsplash.com/photo-1507238692062-8706d27ec8c9?auto=format&fit=crop&w=800&q=80" alt="Setup Desain" class="relative z-10 w-full rounded-3xl object-cover aspect-[4/5] grayscale hover:grayscale-0 transition duration-500 shadow-2xl border border-white/10 select-none">
+        
+        <!-- Floating Pill Badge (Melayang di Tengah Bawah) -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 w-[85%] max-w-xs bg-darker/90 backdrop-blur-md py-3.5 px-6 rounded-full border border-white/15 shadow-[0_10px_25px_rgba(0,0,0,0.5)] flex items-center justify-between pointer-events-none">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-accent animate-pulse"></span>
+                <span class="text-xs text-gray-300 font-medium uppercase tracking-wider">Experience</span>
+            </div>
+            <div class="text-lg font-bold text-white flex items-center gap-1">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400 font-extrabold text-xl">5+</span> Tahun
+            </div>
+        </div>
+    </div>
+</div>
                 
                 <!-- Text Content -->
                 <div class="w-full lg:w-1/2">
