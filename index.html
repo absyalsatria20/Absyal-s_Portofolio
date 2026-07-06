@@ -170,13 +170,25 @@
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Project Showcase</h2>
                 <div class="w-16 h-1 bg-accent mx-auto rounded-full mb-8"></div>
                 
-                <!-- Filter Buttons -->
-                <div class="flex flex-wrap justify-center gap-3" id="filter-container">
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-700 text-sm font-medium text-gray-400 hover:text-white transition-all" data-filter="graphic">Desain Grafis</button>
-                    <button class="filter-btn px-6 py-2 rounded-full border border-gray-700 text-sm font-medium text-gray-400 hover:text-white transition-all" data-filter="motion">Motion Grafis</button>
-                    <button class="filter-btn active px-6 py-2 rounded-full border border-gray-700 text-sm font-medium transition-all" data-filter="all">Semua</button>
-                </div>
-            </div>
+                <!-- Filter Buttons (Upgraded dengan Animasi Cinematic Glow & Scale) -->
+<div class="flex flex-wrap justify-center gap-3 md:gap-4" id="filter-container">
+    
+    <!-- Tombol 1: Desain Grafis -->
+    <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-700 bg-white/5 backdrop-blur-md text-sm font-medium text-gray-300 hover:bg-white hover:text-darker hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer" data-filter="graphic">
+        Desain Grafis
+    </button>
+    
+    <!-- Tombol 2: Motion Grafis -->
+    <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-700 bg-white/5 backdrop-blur-md text-sm font-medium text-gray-300 hover:bg-white hover:text-darker hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer" data-filter="motion">
+        Motion Grafis
+    </button>
+    
+    <!-- Tombol 3: Semua (Default Active) -->
+    <button class="filter-btn active px-6 py-2.5 rounded-full border border-gray-700 bg-white/5 backdrop-blur-md text-sm font-medium text-gray-300 hover:bg-white hover:text-darker hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer" data-filter="all">
+        Semua
+    </button>
+
+</div>
 
             <!-- Portfolio Grid -->
             <div class="columns-2 lg:columns-3 gap-3 md:gap-6" id="portfolio-grid">
@@ -565,32 +577,7 @@
             }
         });
     </script>
-   
-    <script>
-    // --- SENSOR HEMAT RAM: PAUSE VIDEO SAAT TIDAK TERLIHAT DI LAYAR ---
-    document.addEventListener("DOMContentLoaded", function() {
-        const videos = document.querySelectorAll('#portfolio-grid video');
-        
-        if ("IntersectionObserver" in window) {
-            const videoObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    // Jika video masuk ke layar (minimal 20% terlihat), putar!
-                    if (entry.isIntersecting) {
-                        entry.target.play().catch(() => {});
-                    } else {
-                        // Jika digulir lewat dan tidak terlihat, hentikan!
-                        entry.target.pause();
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            videos.forEach(video => {
-                videoObserver.observe(video);
-            });
-        }
-    });
-</script>
-
+    
 <script>
     function toggleAbsyalCard(event) {
         // PENGAMAN: Jika yang diklik adalah tombol/link CV, biarkan membuka CV (jangan ditutup)
