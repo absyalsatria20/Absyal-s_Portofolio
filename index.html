@@ -308,7 +308,19 @@
                     <!-- Garis Aksen Gradasi -->
                     <div class="w-12 h-1 bg-gradient-to-r from-accent to-purple-500 mb-5 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 delay-200 origin-left"></div>
                     
-                    <h3 class="text-3xl font-extrabold text-white tracking-tight mb-2">Absyal Satria</h3>
+                    <!-- ================= AREA JUDUL SWAP (CLICK FOR MORE -> ABSYAL SATRIA) ================= -->
+                    <div class="relative mb-2">
+                        <!-- 1. Teks "Click for more!" (MUNCUL di awal, HILANG saat diklik/hover) -->
+                        <div class="text-xs font-bold tracking-widest text-accent uppercase flex items-center gap-1.5 opacity-100 group-hover:opacity-0 group-[.is-active]:opacity-0 transition-all duration-300 absolute top-2 left-0 pointer-events-none">
+                            <i class="ph-bold ph-cursor-click text-sm animate-bounce"></i>
+                            <span>Click for more!</span>
+                        </div>
+                        
+                        <!-- 2. Nama "Absyal Satria" (HILANG di awal, MUNCUL saat diklik/hover) -->
+                        <h3 class="text-3xl font-extrabold text-white tracking-tight opacity-0 group-hover:opacity-100 group-[.is-active]:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0 group-[.is-active]:translate-y-0 drop-shadow-md">
+                            Absyal Satria
+                        </h3>
+                    </div>
                     
                     <p class="text-gray-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300">
                         Kreator visual yang siap mengubah ide abstrak menjadi karya digital abadi dan menakjubkan.
