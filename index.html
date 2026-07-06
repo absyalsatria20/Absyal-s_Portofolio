@@ -279,7 +279,7 @@
                 <!-- KOLOM KIRI: Foto Absyal (Style Cinematic Hover Card) -->
 <div class="w-full flex justify-center">
     <div class="w-full max-w-[400px]">
-        <div class="relative flex justify-center group cursor-pointer">
+        <div id="absyal-card" onclick="toggleAbsyalCard(event)" class="relative flex justify-center group cursor-pointer select-none">
             <!-- Efek Gradasi Belakang Anti-Glitch -->
             <div class="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur-2xl opacity-30 z-0 pointer-events-none transform-gpu group-hover:opacity-60 transition-opacity duration-700"></div>
             
@@ -583,6 +583,23 @@
             });
         }
     });
+</script>
+
+<script>
+    function toggleAbsyalCard(event) {
+        // PENGAMAN: Jika yang diklik adalah tombol/link CV, biarkan membuka CV (jangan ditutup)
+        if (event.target.closest('a')) return;
+        
+        // Hentikan efek bawaan browser mobile (mencegah double trigger)
+        event.preventDefault(); 
+        
+        const card = document.getElementById('absyal-card');
+        if (card) {
+            // Jika kartu sudah punya kelas 'is-active', hapus (kembali ke awal)
+            // Jika belum punya, tambahkan (memunculkan nama & resume)
+            card.classList.toggle('is-active');
+        }
+    }
 </script>
     
 </body>
