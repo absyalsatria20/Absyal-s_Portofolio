@@ -199,17 +199,33 @@
                     <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/40 to-transparent flex flex-col justify-end p-6"></div>
                 </div>
 
-                <!-- Motion Item 3 -->
-                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion" onclick="openModal('video', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/ICARUS%20MOTION%20FINAL%20WINGS%20FIX.mp4')">
-                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/ICARUS%20MOTION%20FINAL%20WINGS%20FIX.mp4" autoplay loop muted playsinline class="w-full h-auto object-cover transition-all duration-500"></video>
-                    <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6"></div>
-                </div>
-
                 <!-- Motion Item 1 -->
-                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion" onclick="openModal('video', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/BORDER%20ATAS%20MOTION%20SERBA%2010k%20FINAL.mp4')">
-                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/BORDER%20ATAS%20MOTION%20SERBA%2010k%20FINAL.mp4" autoplay loop muted playsinline class="w-full h-auto object-cover transition-all duration-500"></video>
-                    <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6"></div>
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion">
+                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/ICARUS%20MOTION%20FINAL%20WINGS%20FIX.mp4#t=0.5" preload="metadata" playsinline class="w-full h-auto object-cover transition-all duration-500"onended="
+                this.controls = false; 
+                this.currentTime = 0.5; 
+                this.nextElementSibling.style.display = 'flex';"></video>
+                    <div class="play-overlay absolute inset-0 flex items-center justify-center z-10 transition-opacity duration-300" onclick="const v = this.previousElementSibling; v.controls = true; v.play(); this.style.display = 'none';">
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:bg-white/20 group-hover:scale-110 group-hover:border-white/50 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
+                    <i class="ph-fill ph-play text-2xl ml-1 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></i>
                 </div>
+                </div>
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6 pointer-events-none z-0"></div>
+            </div>
+
+                <!-- Motion Item 2 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion">
+                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/BORDER%20ATAS%20MOTION%20SERBA%2010k%20FINAL.mp4#t=0.5" preload="metadata" playsinline class="w-full h-auto object-cover transition-all duration-500"onended="
+                this.controls = false; 
+                this.currentTime = 0.5; 
+                this.nextElementSibling.style.display = 'flex';"></video>
+                    <div class="play-overlay absolute inset-0 flex items-center justify-center z-10 transition-opacity duration-300" onclick="const v = this.previousElementSibling; v.controls = true; v.play(); this.style.display = 'none';">
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:bg-white/20 group-hover:scale-110 group-hover:border-white/50 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
+                    <i class="ph-fill ph-play text-2xl ml-1 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></i>
+                </div>
+                </div>
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6 pointer-events-none z-0"></div>
+            </div>
 
                 <!-- Graphic Item 3 -->
                 <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="graphic" onclick="openModal('image', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/SUPOTSU%20LIVE%20posting.jpg')">
@@ -217,11 +233,19 @@
                     <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/40 to-transparent flex flex-col justify-end p-6"></div>
                 </div>
 
-                <!-- Motion Item 2 (YANG SEBELUMNYA TERPOTONG DISINI) -->
-                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion" onclick="openModal('video', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/7.7%20SALE%20BANNER%20SOSMED%20SUPOTSU.mp4')">
-                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/7.7%20SALE%20BANNER%20SOSMED%20SUPOTSU.mp4" autoplay loop muted playsinline class="w-full h-auto object-cover transition-all duration-500"></video>
-                    <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6"></div>
+                <!-- Motion Item 3 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion">
+                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/7.7%20SALE%20BANNER%20SOSMED%20SUPOTSU.mp4#t=0.5" preload="metadata" playsinline class="w-full h-auto object-cover transition-all duration-500"onended="
+                this.controls = false; 
+                this.currentTime = 0.5; 
+                this.nextElementSibling.style.display = 'flex';"></video>
+                    <div class="play-overlay absolute inset-0 flex items-center justify-center z-10 transition-opacity duration-300" onclick="const v = this.previousElementSibling; v.controls = true; v.play(); this.style.display = 'none';">
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:bg-white/20 group-hover:scale-110 group-hover:border-white/50 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
+                    <i class="ph-fill ph-play text-2xl ml-1 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></i>
                 </div>
+                </div>
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6 pointer-events-none z-0"></div>
+            </div>
 
                 <!-- Graphic Item 4 (YANG SEBELUMNYA IKUT TERHAPUS) -->
                 <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="graphic" onclick="openModal('image', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/7.7%20BANNER%20SUPOTSU.jpg')">
@@ -235,11 +259,19 @@
                     <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/40 to-transparent flex flex-col justify-end p-6"></div>
                 </div>
 
-                <!-- Motion Item 4 -->
-                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion" onclick="openModal('video', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/6.6%20BANNER%20SUPOTSU.mp4')">
-                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/6.6%20BANNER%20SUPOTSU.mp4" autoplay loop muted playsinline class="w-full h-auto object-cover transition-all duration-500"></video>
-                    <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6"></div>
+                <!-- Motion Item 3 -->
+                <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="motion">
+                    <video src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/6.6%20BANNER%20SUPOTSU.mp4#t=0.5" preload="metadata" playsinline class="w-full h-auto object-cover transition-all duration-500"onended="
+                this.controls = false; 
+                this.currentTime = 0.5; 
+                this.nextElementSibling.style.display = 'flex';"></video>
+                    <div class="play-overlay absolute inset-0 flex items-center justify-center z-10 transition-opacity duration-300" onclick="const v = this.previousElementSibling; v.controls = true; v.play(); this.style.display = 'none';">
+                    <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white shadow-[0_8px_32px_rgba(0,0,0,0.3)] group-hover:bg-white/20 group-hover:scale-110 group-hover:border-white/50 hover:shadow-[0_0_25px_rgba(255,255,255,0.3)] transition-all duration-300">
+                    <i class="ph-fill ph-play text-2xl ml-1 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></i>
                 </div>
+                </div>
+                <div class="overlay absolute inset-0 bg-gradient-to-t from-dark/90 via-transparent to-transparent flex flex-col justify-end p-6 pointer-events-none z-0"></div>
+            </div>
 
                 <!-- Graphic Item 6 -->
                 <div class="portfolio-item group relative overflow-hidden rounded-2xl cursor-pointer bg-gray-900 break-inside-avoid inline-block w-full mb-3 md:mb-6" data-category="graphic" onclick="openModal('image', 'https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/COVER%20ACCESSORIS%20+%20KAOS.jpg')">
