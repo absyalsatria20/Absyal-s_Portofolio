@@ -396,133 +396,140 @@
         </div>
     </section>
 
-    <!-- SECTION TENTANG (MENGGUNAKAN CSS GRID ANTI-TURUN & FOTO ABSYAL ASLI) -->
-    <section id="tentang" class="py-24 bg-dark relative border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- ================= SECTION TENTANG & SKILLS (TANPA FOTO DUPLIKAT) ================= -->
+    <section id="tentang" class="py-24 bg-dark relative border-t border-white/5 z-20">
+        <div class="max-w-6xl mx-auto px-6">
             
-            <!-- Menggunakan Grid agar tidak pernah turun ke bawah -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                
-<!-- ================= KOLOM KIRI: FOTO ABSYAL (ANTI-MACET DI HP & PC) ================= -->
-<div class="w-full flex justify-center">
-    <div class="w-full max-w-[400px]">
-        
-        <!-- PEMBUNGKUS KARTU UTAMA -->
-        <div id="absyal-card" onclick="toggleAbsyalCard(event)" class="relative flex justify-center group cursor-pointer select-none">
-            
-            <!-- Efek Gradasi Belakang -->
-            <div class="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur-2xl opacity-30 z-0 pointer-events-none transform-gpu md:group-hover:opacity-60 group-[.is-active]:opacity-60 transition-opacity duration-700"></div>
-            
-            <!-- Container Kartu -->
-            <div class="relative z-10 w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-darker">
-                
-                <!-- Foto Utama (Zoom & Gelap saat Hover PC / Klik HP) -->
-                <div class="absolute inset-0 bg-black">
-                    <img src="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/2%204x6.jpg" 
-                         alt="Foto Absyal" 
-                         class="w-full h-full object-cover object-top opacity-90 md:group-hover:opacity-40 group-[.is-active]:opacity-40 md:group-hover:scale-110 group-[.is-active]:scale-110 transition-all duration-700 ease-in-out pointer-events-none">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-accent uppercase tracking-wider mb-4">
+                    <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                    Technical Expertise
                 </div>
-
-                <!-- Badge 5+ Tahun Pengalaman -->
-                <div class="absolute top-5 right-5 bg-darker/80 backdrop-blur-md px-4 py-3 rounded-2xl border border-white/10 text-white flex items-center gap-3 transform -translate-y-4 opacity-0 md:group-hover:translate-y-0 group-[.is-active]:translate-y-0 md:group-hover:opacity-100 group-[.is-active]:opacity-100 transition-all duration-500 delay-100 z-20 shadow-xl pointer-events-none">
-                    <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400 text-2xl md:text-3xl leading-none">5+</span>
-                    <span class="text-[10px] uppercase tracking-widest text-gray-400 leading-tight">Tahun<br>Pengalaman</span>
-                </div>
-
-                <!-- Overlay Gelap -->
-                <div class="absolute inset-0 bg-gradient-to-t from-darker via-darker/60 to-transparent opacity-70 md:group-hover:opacity-100 group-[.is-active]:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
-                
-                <!-- Konten Teks & Tombol -->
-                <div class="absolute bottom-0 left-0 right-0 p-8 z-20 transform translate-y-28 md:group-hover:translate-y-0 group-[.is-active]:translate-y-0 transition-transform duration-500 ease-out">
-                    
-                    <!-- Garis Aksen -->
-                    <div class="w-12 h-1 bg-gradient-to-r from-accent to-purple-500 mb-4 rounded-full transform scale-x-0 md:group-hover:scale-x-100 group-[.is-active]:scale-x-100 transition-transform duration-500 delay-100 origin-left"></div>
-                    
-                    <!-- AREA JUDUL SWAP (Click for more <-> Absyal Satria) -->
-                    <div class="relative mb-2">
-                        <!-- 1. Teks Click For More (Hilang saat Hover PC / Klik HP) -->
-                        <div class="text-xs font-bold tracking-widest text-accent uppercase flex items-center gap-1.5 opacity-100 md:group-hover:opacity-0 group-[.is-active]:opacity-0 transition-all duration-300 absolute top-6 left-0 pointer-events-none">
-                            <i class="ph-bold ph-cursor-click text-sm animate-bounce"></i>
-                            <span>Click for more!</span>
-                        </div>
-                        
-                        <!-- 2. Nama Absyal Satria (Muncul saat Hover PC / Klik HP) -->
-                        <h3 class="text-3xl font-extrabold text-white tracking-tight opacity-0 md:group-hover:opacity-100 group-[.is-active]:opacity-100 transition-all duration-500 transform translate-y-4 md:group-hover:translate-y-0 group-[.is-active]:translate-y-0 drop-shadow-md">
-                            Absyal Satria
-                        </h3>
-                    </div>
-                    
-                    <!-- Deskripsi -->
-                    <p class="text-gray-300 text-sm leading-relaxed mb-6 opacity-0 md:group-hover:opacity-100 group-[.is-active]:opacity-100 transition-opacity duration-500 delay-200 pointer-events-none">
-                        Kreator visual yang siap mengubah ide abstrak menjadi karya digital abadi dan menakjubkan.
-                    </p>
-                    
-                    <!-- Tombol CV -->
-                    <a href="https://olsupiubpqgmiiqrgqeb.supabase.co/storage/v1/object/public/Absyal%20Portofolio/Absyal%20Ayang%20satria-resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-white hover:text-darker hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all duration-300 opacity-0 md:group-hover:opacity-100 group-[.is-active]:opacity-100 delay-300">
-                        Lihat CV / Resume
-                        <i class="ph-bold ph-file-text text-lg"></i>
-                    </a>
-                    
-                </div>
-
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                    Keahlian & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent via-purple-400 to-pink-500">Arsenal Kreatif.</span>
+                </h2>
+                <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                    Saya memadukan ketajaman desain grafis statis dengan keajaiban motion graphics untuk menciptakan identitas visual yang tidak hanya indah di mata, tapi juga kuat menyampaikan pesan usaha kamu.
+                </p>
             </div>
-        </div>
 
-    </div>
-</div>
+            <!-- Grid 2 Pilar Utama (Graphic vs Motion) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 
-                <!-- Kolom Kanan: Teks Cerita & Software Arsenal -->
-                <div class="w-full">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Cerita Di Balik <span class="text-accent">Karya</span></h2>
-                    <p class="text-gray-400 mb-6 text-lg leading-relaxed">
-                        Halo! Saya adalah kreator visual yang mengkombinasikan prinsip desain grafis statis dengan energi pergerakan dari motion grafis. Bagi saya, desain bukan hanya tentang membuat sesuatu terlihat bagus, tetapi tentang bagaimana menyampaikan pesan secara efektif dan emosional.
+                <!-- Pilar 1: Graphic Design -->
+                <div class="p-8 rounded-3xl bg-darker border border-white/10 hover:border-white/30 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ph-duotone ph-palette"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Desain Grafis & Branding</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Membangun karakter brand dari nol melalui perancangan logo, poster komersial, materi promosi sosial media, hingga kemasan produk yang estetik dan bernilai jual tinggi.
                     </p>
-                    <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-                        Keahlian saya mencakup identitas merek (branding), desain antarmuka, hingga animasi explainer dan aset promosi video. Saya terbiasa mengubah ide kompleks menjadi visual yang mudah dinikmati.
-                    </p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Social Media Ads</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Brand Identity</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Print Design</span>
+                    </div>
+                </div>
 
-                    <!-- Skills / Software Arsenal -->
-                    <div class="space-y-4">
-                        <h4 class="text-white font-semibold mb-2">Software Skills:</h4>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-300 flex items-center gap-2"><i class="ph-fill ph-bezier-curve text-accent"></i> Adobe Illustrator</span>
-                            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-300 flex items-center gap-2"><i class="ph-fill ph-image text-blue-400"></i> Adobe Photoshop</span>
-                            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-300 flex items-center gap-2"><i class="ph-fill ph-video-camera text-purple-400"></i> After Effects</span>
-                            <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-sm text-gray-300 flex items-center gap-2"><i class="ph-fill ph-film-strip text-red-400"></i> Premiere Pro</span>
-                        </div>
+                <!-- Pilar 2: Motion Graphics -->
+                <div class="p-8 rounded-3xl bg-darker border border-white/10 hover:border-white/30 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="ph-duotone ph-film-slate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Motion Graphics & Video</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Menghidupkan desain statis menjadi animasi kinetik yang menarik perhatian. Fokus pada animasi promosi produk, video explainer, transisi mulus, dan visual loop yang memukau.
+                    </p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Product Animation</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Seamless Looping</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-medium text-gray-300">Video Editing</span>
                     </div>
                 </div>
 
             </div>
+
+            <!-- Software Arsenal (Pills) -->
+            <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-white/[0.03] to-white/[0.01] border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="text-center md:text-left">
+                    <h4 class="text-white font-bold text-base mb-1">Software & Tools Sehari-hari</h4>
+                    <p class="text-gray-400 text-xs">Aplikasi profesional yang saya gunakan untuk memproduksi karya.</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2.5 bg-darker border border-white/10 rounded-xl text-sm font-medium text-gray-300 flex items-center gap-2 hover:border-orange-500 transition-colors shadow-sm"><i class="ph-fill ph-bezier-curve text-orange-500 text-lg"></i> Illustrator</span>
+                    <span class="px-4 py-2.5 bg-darker border border-white/10 rounded-xl text-sm font-medium text-gray-300 flex items-center gap-2 hover:border-blue-400 transition-colors shadow-sm"><i class="ph-fill ph-image text-blue-400 text-lg"></i> Photoshop</span>
+                    <span class="px-4 py-2.5 bg-darker border border-white/10 rounded-xl text-sm font-medium text-gray-300 flex items-center gap-2 hover:border-purple-400 transition-colors shadow-sm"><i class="ph-fill ph-video-camera text-purple-400 text-lg"></i> After Effects</span>
+                    <span class="px-4 py-2.5 bg-darker border border-white/10 rounded-xl text-sm font-medium text-gray-300 flex items-center gap-2 hover:border-red-400 transition-colors shadow-sm"><i class="ph-fill ph-film-strip text-red-400 text-lg"></i> Premiere Pro</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section id="kontak" class="py-24 bg-darker relative">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <i class="ph-duotone ph-paper-plane-tilt text-6xl text-accent mb-6 inline-block"></i>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6">Mari Berkolaborasi.</h2>
-            <p class="text-gray-400 mb-10 text-lg">
-                Punya proyek menarik, ide gila, atau sekadar ingin menyapa? <br class="hidden md:block"> Kotak masuk saya selalu terbuka.
-            </p>
+    <!-- ================= SECTION KONTAK (INTEGRASI WHATSAPP DIRECT) ================= -->
+    <section id="kontak" class="py-24 bg-darker relative overflow-hidden z-20">
+        
+        <!-- Cahaya Latar Estetik -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-emerald-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
             
-            <a href="mailto:halo@emailanda.com" class="inline-flex items-center justify-center px-8 py-4 bg-accent hover:bg-accentHover text-white font-bold rounded-full transition-all hover:scale-105 shadow-[0_0_20px_rgba(99,102,241,0.4)] gap-2">
-                Mulai Percakapan <i class="ph-bold ph-arrow-right"></i>
+            <!-- Ikon Pesan -->
+            <div class="w-20 h-20 bg-emerald-500/10 border border-emerald-500/20 rounded-3xl flex items-center justify-center text-emerald-400 text-4xl mx-auto mb-8 shadow-[0_0_30px_rgba(16,185,129,0.2)] animate-bounce">
+                <i class="ph-fill ph-whatsapp-logo"></i>
+            </div>
+
+            <!-- Headline Kontak -->
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                Tertarik Untuk <br class="hidden sm:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-500">
+                    Berkolaborasi Bersama?
+                </span>
+            </h2>
+            <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
+                Punya ide project grafis, butuh animasi promosi yang dinamis, atau sekadar ingin diskusi harga? Langsung chat saya lewat WhatsApp, mari kita wujudkan karyanya!
+            </p>
+
+            <!-- TOMBOL WHATSAPP RAKSASA (DIRECT CHAT) -->
+            <!-- GANTI ANGKA 6285923451479 DENGAN NOMOR WA ASLIMU (WAJIB PAKAI 62 DI DEPAN, JANGAN PAKAI 0 ATAU +) -->
+            <a href="https://wa.me/6285923451479?text=Halo%20Absyal,%20saya%20melihat%20portofolio%20website%20kamu%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai%20project..." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center justify-center gap-3.5 px-8 py-5 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-darker font-extrabold text-base md:text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-[0_0_35px_rgba(16,185,129,0.5)] cursor-pointer">
+                <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                <span>Chat via WhatsApp Sekarang</span>
+                <i class="ph-bold ph-arrow-up-right text-xl"></i>
             </a>
 
-            <div class="mt-16 flex justify-center space-x-6">
-                <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all hover:-translate-y-1">
+            <!-- Info Tambahan / Alternatif -->
+            <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500">
+                <span class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                    Fast Response (09.00 - 21.00 WIB)
+                </span>
+                <span class="hidden sm:inline">•</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=absyalsatria20@gmail.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="hover:text-gray-300 underline underline-offset-4 transition-colors cursor-pointer">
+                        Atau kirim lewat Email: absyalsatria20@gmail.com
+                </a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="mt-16 pt-12 border-t border-white/5 flex justify-center space-x-5">
+                <a href="https://instagram.com/usernamekamu" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all hover:-translate-y-1">
                     <i class="ph-fill ph-instagram-logo text-xl"></i>
                 </a>
-                <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all hover:-translate-y-1">
+                <a href="https://behance.net/usernamekamu" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all hover:-translate-y-1">
                     <i class="ph-fill ph-behance-logo text-xl"></i>
                 </a>
-                <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all hover:-translate-y-1">
-                    <i class="ph-fill ph-dribbble-logo text-xl"></i>
-                </a>
-                <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 transition-all hover:-translate-y-1">
+                <a href="https://linkedin.com/in/usernamekamu" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/30 transition-all hover:-translate-y-1">
                     <i class="ph-fill ph-linkedin-logo text-xl"></i>
                 </a>
             </div>
+
         </div>
     </section>
 
